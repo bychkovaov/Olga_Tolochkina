@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ольга Толочкина — лизинг и кредит на авто для бизнеса, ИП и частных лиц</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E0E0E; --navy-2:#1C1C1C; --gold:#C6F135; --gold-d:#55670C;
+  --ivory:#F2F2EE; --cream:#FAFAF6; --ink:#141414; --muted:#6E6E6E; --line:#E3E3DD;
+  --shadow:0 26px 70px rgba(0,0,0,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Manrope',sans-serif;line-height:1.08;font-weight:800;letter-spacing:-.02em}
+.serif{font-family:'Manrope',sans-serif}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-weight:700;
+  font-family:'Manrope',sans-serif;font-size:16px;padding:15px 30px;border-radius:2px;text-decoration:none;
+  border:none;cursor:pointer;letter-spacing:.01em;transition:background .2s,transform .15s}
+.btn:hover{background:#AEDA22;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.btn.ghost:hover{background:rgba(198,241,53,.1)}
+.btn.dark{background:var(--navy);color:#fff}.btn.dark:hover{background:var(--navy-2)}
+.cta-center{text-align:center;margin-top:48px}
+.cta-center .btn+.btn{margin-left:14px}
+.eyebrow{font-family:'Manrope',sans-serif;color:var(--gold-d);font-weight:700;text-transform:uppercase;
+  letter-spacing:.22em;font-size:12px;margin-bottom:16px}
+.eyebrow.on-dark{color:var(--gold)}
+h2.title{font-size:42px;margin-bottom:16px}
+.lead{color:var(--muted);font-size:18px;max-width:660px;font-family:'Manrope',sans-serif}
+section{padding:92px 0}
+.divider{width:54px;height:2px;background:var(--gold);margin-bottom:24px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:13px}
+.logo .mark{width:44px;height:44px;border:1px solid var(--gold);color:var(--gold-d);display:grid;place-items:center;
+  font-family:'Manrope',sans-serif;font-size:18px;font-weight:600;letter-spacing:.02em}
+.logo b{font-family:'Manrope',sans-serif;font-weight:600;font-size:19px;color:var(--navy);display:block}
+.logo small{font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.nav-links{display:flex;gap:30px}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14.5px;opacity:.82}
+.nav-links a:hover{opacity:1;color:var(--gold-d)}
+.nav-cta{display:flex;align-items:center;gap:22px}
+.phone{font-weight:700;font-size:17px;text-decoration:none;color:var(--navy);white-space:nowrap}
+.phone small{display:block;font-weight:600;font-size:10.5px;color:var(--gold-d);letter-spacing:.1em;text-transform:uppercase}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 500px at 92% 0%,rgba(198,241,53,.16),transparent 60%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding:80px 0 90px}
+.hero .tag{display:inline-block;border:1px solid rgba(198,241,53,.5);color:var(--gold);font-weight:600;
+  font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:2px;margin-bottom:26px}
+.hero h1{font-size:62px;font-weight:800;margin:0 0 26px;color:#fff}
+.hero h1 .hl{color:var(--gold);font-style:italic}
+.hero p.sub{font-size:19px;color:#C7CEDA;margin-bottom:34px;max-width:520px}
+.offer-cards{display:flex;gap:0;margin:0 0 38px;border:1px solid rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
+.oc{flex:1;padding:22px 24px;border-right:1px solid rgba(255,255,255,.12)}
+.oc:last-child{border-right:none}
+.oc .num{font-family:'Manrope',sans-serif;font-size:34px;font-weight:800;color:var(--gold);line-height:1}
+.oc .lbl{font-size:13px;color:#AEB6C4;margin-top:8px;font-weight:500}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-cta .note{font-size:13px;color:#9AA3B2}
+/* hero photo */
+.photo-card{position:relative}
+.photo{aspect-ratio:1000/1560;border-radius:4px;overflow:hidden;position:relative;
+  border:1px solid rgba(198,241,53,.45);box-shadow:var(--shadow);background:var(--navy-2)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#9AA3B2;padding:26px}
+.photo .ph b{color:var(--gold);font-family:'Manrope',sans-serif;font-size:18px;display:block;margin-bottom:8px}
+.photo .ph span{font-size:12.5px;line-height:1.6}
+.gold-frame{position:absolute;inset:12px;border:1px solid rgba(198,241,53,.35);border-radius:2px;pointer-events:none;z-index:2}
+.badge{position:absolute;right:18px;bottom:18px;left:auto;background:var(--cream);color:var(--ink);border-radius:3px;
+  padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;max-width:250px;z-index:3;border:1px solid var(--line)}
+.badge .ring{width:46px;height:46px;border-radius:50%;background:conic-gradient(var(--gold) 95%,#E7E1D4 0);
+  display:grid;place-items:center;flex:0 0 auto}
+.badge .ring b{background:var(--cream);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;color:var(--gold-d);font-weight:700;font-family:'Manrope',sans-serif}
+.badge small{font-size:12.5px;color:var(--muted);line-height:1.35}
+
+/* ABOUT */
+.about{background:var(--ivory)}
+.about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:center}
+.about-photo{aspect-ratio:4/5;border-radius:4px;overflow:hidden;position:relative;border:1px solid var(--line);
+  box-shadow:var(--shadow);background:#E4E4DE;display:grid;place-items:center;color:var(--muted);text-align:center}
+.about-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.about-photo .ph{padding:24px}.about-photo .ph b{color:var(--gold-d);font-family:'Manrope',sans-serif;display:block;margin-bottom:6px}
+.about ul{list-style:none;margin-top:24px;display:grid;gap:15px}
+.about li{display:flex;gap:14px;align-items:flex-start;font-size:16px}
+.about li .ck{color:var(--gold-d);font-weight:700;flex:0 0 auto;font-size:15px;margin-top:1px}
+.sig{margin-top:30px;font-family:'Manrope',sans-serif;font-style:italic;font-size:20px;color:var(--navy);border-left:2px solid var(--gold);padding-left:20px}
+
+/* CARDS */
+.grid{display:grid;gap:24px}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:30px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.card .ic{width:50px;height:50px;border-radius:3px;background:var(--navy);color:var(--gold);
+  display:grid;place-items:center;font-size:20px;font-weight:700;margin-bottom:18px;font-family:'Manrope',sans-serif}
+.card h3{font-size:20px;margin-bottom:9px;color:var(--navy)}
+.card p{color:var(--muted);font-size:15px}
+
+/* PROBLEM/SOLUTION */
+.ps{background:var(--ivory)}
+.ps-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:36px}
+.ps-col{background:var(--cream);border-radius:4px;padding:34px;border:1px solid var(--line)}
+.ps-col.bad{border-top:3px solid #B98A86}
+.ps-col.good{border-top:3px solid var(--gold)}
+.ps-col h3{font-size:23px;margin-bottom:20px;color:var(--navy)}
+.ps-col li{list-style:none;display:flex;gap:13px;margin-bottom:14px;color:var(--muted);font-size:15px}
+.ps-col .mk{font-weight:700;flex:0 0 auto}
+.bad .mk{color:#B0736C}.good .mk{color:var(--gold-d)}
+
+/* STATS */
+.stats{background:var(--navy);color:#fff}
+.stat{text-align:center;padding:0 10px}
+.stat .n{font-family:'Manrope',sans-serif;font-size:50px;font-weight:800;color:var(--gold)}
+.stat .l{color:#B8C0CE;font-size:15px;margin-top:8px}
+
+/* REVIEWS */
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:30px}
+.rev .stars{color:var(--gold);margin-bottom:14px;letter-spacing:3px}
+.rev p{font-size:15.5px;color:var(--ink);margin-bottom:20px;font-style:italic;font-family:'Manrope',sans-serif;line-height:1.5}
+.rev .who{display:flex;align-items:center;gap:13px}
+.rev .av{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:700;font-family:'Manrope',sans-serif}
+.rev .who b{font-size:15px;color:var(--navy)}.rev .who span{font-size:13px;color:var(--muted);display:block}
+
+/* PRICE */
+.price{background:var(--cream)}
+.calc{background:var(--navy);color:#fff;border-radius:5px;padding:46px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:36px}
+.calc .big{font-family:'Manrope',sans-serif;font-size:46px;font-weight:800;color:var(--gold);margin-top:6px}
+.calc .muted-s{color:#AEB6C4;font-size:14px}
+.calc .vs{display:grid;gap:12px}
+.calc .row{display:flex;justify-content:space-between;padding:15px 20px;border-radius:3px;
+  background:rgba(255,255,255,.06);font-weight:600;font-size:15px}
+.calc .row.hi{background:var(--gold);color:var(--navy)}
+.calc .row.zero{border:1px solid rgba(198,241,53,.4);background:transparent}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:42px}
+.step .n{width:56px;height:56px;border:1px solid var(--gold);color:var(--gold-d);font-family:'Manrope',sans-serif;
+  font-weight:600;font-size:24px;display:grid;place-items:center;margin-bottom:18px;border-radius:50%}
+.step h3{font-size:19px;margin-bottom:9px;color:var(--navy)}.step p{color:var(--muted);font-size:15px}
+
+/* FORM */
+.form-wrap{background:var(--navy);border-radius:6px;padding:56px;color:#fff;position:relative;overflow:hidden}
+.form-wrap:before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 100% 0,rgba(198,241,53,.14),transparent 60%)}
+.form-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.form-grid h2{font-size:36px;margin-bottom:14px;color:#fff}
+.form-grid p{color:#C7CEDA;font-size:16px}
+form{display:grid;gap:14px}
+form input{padding:16px 18px;border-radius:3px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);
+  color:#fff;font-size:16px;font-family:'Manrope',sans-serif}
+form input::placeholder{color:#939CAC}
+form input:focus{outline:none;border-color:var(--gold)}
+.form-note{font-size:12px;color:#939CAC;margin-top:2px}
+.ok{display:none;background:var(--gold);color:var(--navy);padding:13px;border-radius:3px;font-weight:700;text-align:center}
+
+/* GUARANTEES / CONTACTS */
+.guar .card,.contacts .card{text-align:center}
+.guar .card .ic,.contacts .card .ic{margin:0 auto 18px}
+.contacts a{color:var(--gold-d);font-weight:700;text-decoration:none}
+
+/* FAQ */
+.faq{background:var(--ivory)}
+.faq-item{border-bottom:1px solid var(--line);cursor:pointer}
+.faq-q{padding:24px 0;display:flex;justify-content:space-between;gap:20px;font-weight:600;font-size:19px;
+  align-items:center;font-family:'Manrope',sans-serif;color:var(--navy)}
+.faq-q .pl{color:var(--gold-d);font-size:26px;transition:transform .2s;flex:0 0 auto;font-family:'Manrope',sans-serif}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--muted);font-size:16px}
+.faq-item.open .faq-a{max-height:240px;padding-bottom:24px}
+.faq-item.open .pl{transform:rotate(45deg)}
+
+/* FOOTER */
+footer{background:var(--navy);color:#AEB6C4;padding:52px 0 40px;border-top:1px solid rgba(198,241,53,.25)}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.foot .logo b{color:#fff}.foot .logo .mark{color:var(--gold)}
+.foot-links a{color:#C7CEDA;text-decoration:none;margin-left:18px;font-size:14px}
+.foot-links a:hover{color:var(--gold)}
+.disclaimer{font-size:12px;color:#6E7788;margin-top:26px;max-width:860px;line-height:1.6}
+
+@media(max-width:920px){
+  .hero-grid,.about-grid,.ps-grid,.calc,.form-grid,.usn-grid{grid-template-columns:1fr}
+  .g3,.g4,.steps{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:44px}h2.title{font-size:32px}
+  .nav-links,.phone small{display:none}
+  section{padding:60px 0}
+  .badge{position:static;margin-top:16px;max-width:none;right:auto;bottom:auto}
+  .cta-center .btn{display:block;margin:12px auto 0;max-width:320px}
+  .cta-center .btn+.btn{margin-left:auto}
+}
+@media(max-width:560px){.g3,.g4,.steps,.offer-cards{grid-template-columns:1fr;flex-direction:column}
+  .oc{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}}
+</style>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">ОТ</span>
+      <div><b>Ольга Толочкина</b><small>Финансовый эксперт · лизинг</small></div>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Что финансирую</a>
+      <a href="#adv">Преимущества</a>
+      <a href="#price">Сколько стоит</a>
+      <a href="#steps">Этапы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone" href="tel:+79169777906">+7-916-977-79-06<small>Звоните, отвечу лично</small></a>
+      <a class="btn" href="#form">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<!-- ПЕРВЫЙ ЭКРАН -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Лизинг и кредит на авто · бизнес, ИП, частные лица</span>
+      <h1>Лизинг авто по цене <span class="hl">меньше парковки</span></h1>
+      <p class="sub">Подберу авто в лизинг или кредит на лучших условиях среди 20+ компаний. Честный расчёт полной стоимости — без скрытых комиссий.</p>
+      <div class="offer-cards">
+        <div class="oc"><div class="num">от 0%</div><div class="lbl">первоначальный взнос</div></div>
+        <div class="oc"><div class="num">2 дня</div><div class="lbl">решение по заявке</div></div>
+        <div class="oc"><div class="num">95%</div><div class="lbl">одобрений</div></div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="#form">Рассчитать платёж</a>
+        <a class="btn ghost" href="#about">Кто я такая</a>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <div class="photo">
+        <img src="olga.jpg" alt="Ольга Толочкина" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+        <div class="ph" style="display:none">
+          <b>Фото Ольги Толочкиной</b>
+          <span>положите файл <b style="display:inline">olga.jpg</b> рядом с этой страницей —<br>вертикальный портрет появится здесь</span>
+        </div>
+        <div class="gold-frame"></div>
+      </div>
+      <div class="badge">
+        <div class="ring"><b>95%</b></div>
+        <small>одобрений даже там, где банки отказали</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОБО МНЕ -->
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="olga2.jpg" alt="Ольга Толочкина" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <div class="ph" style="display:none"><b>Второе фото Ольги</b>положите файл olga2.jpg</div>
+    </div>
+    <div>
+      <div class="eyebrow">Кто я такая</div>
+      <div class="divider"></div>
+      <h2 class="title">Ольга Толочкина — ваш личный лизинговый эксперт</h2>
+      <p class="lead">Я не колл-центр и не менеджер одной лизинговой компании. Я работаю на вашей стороне: знаю кухню лизинга изнутри и подбираю условия, которые выгодны вам, а не банку.</p>
+      <ul>
+        <li><span class="ck">◆</span> Веду сделку лично — от первого звонка до последнего платежа. Вы всегда общаетесь со мной, а не с разными операторами.</li>
+        <li><span class="ck">◆</span> Доступ к программам 20+ лизинговых компаний — сравниваю и выбираю лучшую, а не «свою».</li>
+        <li><span class="ck">◆</span> Честный расчёт полной стоимости: показываю итоговую переплату, КАСКО и все комиссии до подписания.</li>
+        <li><span class="ck">◆</span> Одобряю сложные кейсы: молодой бизнес, ИП без оборотов, отказ в банке.</li>
+        <li><span class="ck">◆</span> Мои услуги для вас бесплатны — комиссию платит лизинговая компания.</li>
+      </ul>
+      <p class="sig">«Моя задача — чтобы авто для бизнеса стоило вам меньше, чем парковка возле офиса».</p>
+    </div>
+  </div>
+</section>
+
+<!-- ЧТО ФИНАНСИРУЮ -->
+<section id="services" style="background:#fff">
+  <div class="wrap">
+    <div class="eyebrow">Что я финансирую</div>
+    <div class="divider"></div>
+    <h2 class="title">Лизинг и кредит на любые активы</h2>
+    <p class="lead" style="margin-bottom:44px">Не только автомобили. Подберу финансирование под любую задачу бизнеса — от легковой машины до склада.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic">◈</div><h3>Легковые авто</h3><p>Новые и с пробегом, премиум и масс-сегмент — для бизнеса, ИП и частных лиц. Лизинг или кредит.</p></div>
+      <div class="card"><div class="ic">▤</div><h3>Коммерческий транспорт</h3><p>Грузовики, фургоны, автобусы, формирование и обновление автопарка.</p></div>
+      <div class="card"><div class="ic">⚙</div><h3>Спецтехника</h3><p>Строительная, складская, дорожная и сельхозтехника под ваши проекты.</p></div>
+      <div class="card"><div class="ic">▣</div><h3>Оборудование</h3><p>Производственное, торговое, медицинское, IT и общепит — в лизинг для бизнеса.</p></div>
+      <div class="card"><div class="ic">⌂</div><h3>Коммерческая недвижимость</h3><p>Офисы, склады, торговые и производственные помещения в лизинг.</p></div>
+      <div class="card"><div class="ic">₽</div><h3>Кредит для ИП и бизнеса</h3><p>Когда кредит выгоднее лизинга (например, ИП на УСН 6%) — подберу и сравню оба варианта.</p></div>
+    </div>
+    <div class="cta-center">
+      <a class="btn" href="#form">Подобрать финансирование</a>
+    </div>
+  </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section id="adv">
+  <div class="wrap">
+    <div class="eyebrow">Почему со мной выгоднее</div>
+    <div class="divider"></div>
+    <h2 class="title">Преимущества работы со мной</h2>
+    <p class="lead" style="margin-bottom:44px">Лучшее с рынка плюс то, чего нет у большинства брокеров — личная ответственность и полная прозрачность.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic">%</div><h3>Взнос от 0%</h3><p>Подберу программу с минимальным авансом и честно покажу, как это влияет на ставку.</p></div>
+      <div class="card"><div class="ic">2</div><h3>Решение за 2 дня</h3><p>Минимум документов, онлайн-заявка, предварительный ответ — в день обращения.</p></div>
+      <div class="card"><div class="ic">✓</div><h3>Одобрение 95%</h3><p>Знаю скоринг каждой компании и направляю заявку туда, где точно одобрят.</p></div>
+      <div class="card"><div class="ic">20</div><h3>20+ компаний в подборе</h3><p>Одна заявка — предложения от десятков лизингодателей. Выбираем лучшее.</p></div>
+      <div class="card"><div class="ic">₽</div><h3>Экономия 3–13%</h3><p>Доступ к брокерским ставкам ниже, чем при самостоятельном обращении.</p></div>
+      <div class="card"><div class="ic">◆</div><h3>Один эксперт — я</h3><p>Никаких переключений между менеджерами. Всё ведёт один человек — лично.</p></div>
+      <div class="card"><div class="ic">◎</div><h3>Прозрачный расчёт</h3><p>Полная стоимость сделки до подписания: платёж, переплата, страховка, комиссии.</p></div>
+      <div class="card"><div class="ic">⚑</div><h3>Не только авто</h3><p>Легковые, премиум, коммерческие авто, с пробегом, trade-in — а также спецтехника, оборудование и коммерческая недвижимость в лизинг. Под любую задачу и бюджет.</p></div>
+      <div class="card"><div class="ic">%</div><h3>Налоговая выгода</h3><p>Платежи в расходы, возврат НДС, ускоренная амортизация — посчитаю вашу экономию.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- УСН 6% -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div style="background:var(--navy);color:#fff;border-radius:6px;padding:52px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;width:100%;height:4px;background:var(--gold)"></div>
+      <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center" class="usn-grid">
+        <div>
+          <div class="eyebrow on-dark">Совет финансового эксперта</div>
+          <h2 style="font-size:34px;color:#fff;margin-bottom:16px">ИП на УСН 6%? Возможно, вам выгоднее кредит, а не лизинг</h2>
+          <p style="color:#C7CEDA;font-size:17px;max-width:640px">На УСН 6% «доходы» лизинг теряет свои главные плюсы: платежи не уменьшают налог, а НДС к вычету не принимается. В этом случае я подберу <b style="color:var(--gold)">автокредит</b> — и переплата нередко выходит в разы меньше, чем по лизингу. Сравню оба варианта, покажу полную стоимость каждого и честно скажу, что для вас реально дешевле.</p>
+        </div>
+        <div style="text-align:center">
+          <a class="btn" href="#form" style="width:100%;justify-content:center">Сравнить лизинг и кредит</a>
+          <p style="color:#939CAC;font-size:13px;margin-top:14px">Расчёт по вашей системе налогообложения — бесплатно</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОБЛЕМА И РЕШЕНИЕ -->
+<section class="ps">
+  <div class="wrap">
+    <div class="eyebrow">Проблема и решение</div>
+    <div class="divider"></div>
+    <h2 class="title">Самому — долго и дорого. Со мной — быстро и выгодно.</h2>
+    <div class="ps-grid">
+      <div class="ps-col bad">
+        <h3>Если оформлять лизинг самому</h3>
+        <ul>
+          <li><span class="mk">✕</span> Обзваниваете десяток компаний и сравниваете условия вручную.</li>
+          <li><span class="mk">✕</span> Не видите скрытых комиссий и реальной переплаты.</li>
+          <li><span class="mk">✕</span> Получаете ставку «с улицы» — выше брокерской.</li>
+          <li><span class="mk">✕</span> Один отказ — и начинаете всё заново.</li>
+          <li><span class="mk">✕</span> Тратите недели вместо развития бизнеса.</li>
+        </ul>
+      </div>
+      <div class="ps-col good">
+        <h3>Если доверить мне</h3>
+        <ul>
+          <li><span class="mk">◆</span> Одна заявка — я сама сравниваю 20+ компаний.</li>
+          <li><span class="mk">◆</span> Показываю полную стоимость до подписания.</li>
+          <li><span class="mk">◆</span> Брокерская ставка ниже рыночной.</li>
+          <li><span class="mk">◆</span> Направляю туда, где одобрят — 95% сделок.</li>
+          <li><span class="mk">◆</span> Решение за 2 дня, а не за 2 недели.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;padding:56px 26px;background:#fff">
+  <a class="btn" href="#form">Оставить заявку</a>
+</div>
+
+<!-- ЦИФРЫ -->
+<section class="stats">
+  <div class="wrap">
+    <div class="grid g4">
+      <div class="stat"><div class="n">95%</div><div class="l">одобренных заявок</div></div>
+      <div class="stat"><div class="n">20+</div><div class="l">лизинговых компаний</div></div>
+      <div class="stat"><div class="n">2 дня</div><div class="l">среднее решение</div></div>
+      <div class="stat"><div class="n">0 ₽</div><div class="l">мои услуги для вас</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Отзывы клиентов</div>
+    <div class="divider"></div>
+    <h2 class="title">Что говорят те, кто уже взял авто</h2>
+    <div class="grid g3" style="margin-top:38px">
+      <div class="rev"><div class="stars">★★★★★</div><p>«Думал, с моим ИП без оборотов откажут везде. Ольга нашла компанию, одобрили за 2 дня. Взнос — 0%.»</p><div class="who"><div class="av">И</div><div><b>Игорь М.</b><span>грузоперевозки, ИП</span></div></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>«Впервые кто-то показал реальную переплату до подписания. Никаких сюрпризов. Платёж реально меньше, чем аренда парковки.»</p><div class="who"><div class="av">Е</div><div><b>Елена К.</b><span>салон красоты, ООО</span></div></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>«Сравнивал сам неделю — Ольга за день предложила ставку ниже. Работает лично, всегда на связи.»</p><div class="who"><div class="av">Д</div><div><b>Дмитрий С.</b><span>строительство</span></div></div></div>
+    </div>
+    <p class="disclaimer" style="color:var(--muted)">Отзывы приведены как пример оформления блока. Замените реальными отзывами клиентов.</p>
+  </div>
+</section>
+
+<!-- ЦЕНА -->
+<section id="price" class="price">
+  <div class="wrap">
+    <div class="eyebrow">Сколько это стоит</div>
+    <div class="divider"></div>
+    <h2 class="title">«Меньше парковки» — это не фигура речи</h2>
+    <div class="calc">
+      <div>
+        <div style="display:grid;gap:16px;max-width:340px">
+          <label style="display:block">
+            <span class="muted-s">Стоимость авто, ₽</span>
+            <input id="carPrice" type="number" value="1000000" min="300000" step="50000"
+              style="width:100%;margin-top:6px;padding:13px 15px;border-radius:3px;border:1px solid rgba(255,255,255,.2);
+              background:rgba(255,255,255,.06);color:#fff;font-size:17px;font-family:'Manrope',sans-serif">
+          </label>
+          <label style="display:block">
+            <span class="muted-s">Удорожание, % в год <span style="opacity:.7">(рынок 2026: ~11–13%)</span></span>
+            <input id="rate" type="number" value="13" min="3" max="35" step="0.5"
+              style="width:100%;margin-top:6px;padding:13px 15px;border-radius:3px;border:1px solid rgba(255,255,255,.2);
+              background:rgba(255,255,255,.06);color:#fff;font-size:17px;font-family:'Manrope',sans-serif">
+          </label>
+          <div class="muted-s">Аванс 20% · срок 36 месяцев</div>
+        </div>
+        <div class="big" id="monthlyOut">≈ 33 100 ₽/мес</div>
+        <p class="muted-s" style="margin-top:8px">Аванс: <b id="advOut" style="color:#fff">200 000 ₽</b> · это ориентир. Точный платёж зависит от авто, компании и программы — рассчитаю персонально.</p>
+        <a class="btn" href="#form" style="margin-top:22px">Рассчитать мой платёж</a>
+      </div>
+      <div class="vs">
+        <div class="row">Машиноместо в Москва-Сити, мес.<span>от 35 000 ₽</span></div>
+        <div class="row hi">Платёж по лизингу авто, мес.<span id="rowLease">≈ 33 100 ₽</span></div>
+        <div class="row zero">Моя комиссия с вас<span>0 ₽</span></div>
+        <div class="muted-s" style="margin-top:6px">Аренда машиноместа в Москва-Сити — от 35 000 ₽/мес (в башнях «Евразия», «Меркурий» — от 45 000 ₽). Источник: moscow-city-towers.ru, июль 2026.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЭТАПЫ -->
+<section id="steps">
+  <div class="wrap">
+    <div class="eyebrow">Как мы работаем</div>
+    <div class="divider"></div>
+    <h2 class="title">4 шага до вашего авто</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Заявка</h3><p>Оставляете заявку или звоните. Обсуждаем авто и бюджет — бесплатно.</p></div>
+      <div class="step"><div class="n">2</div><h3>Подбор</h3><p>Сравниваю 20+ компаний и приношу лучшие условия с полным расчётом.</p></div>
+      <div class="step"><div class="n">3</div><h3>Одобрение</h3><p>Готовлю заявку и провожу её там, где одобрят. Решение — за 2 дня.</p></div>
+      <div class="step"><div class="n">4</div><h3>Авто у вас</h3><p>Подписываем договор, вы забираете авто. Я на связи до конца сделки.</p></div>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;padding:56px 26px;background:#fff;border-top:1px solid var(--line)">
+  <a class="btn" href="#form">Рассчитать лизинг</a>
+</div>
+
+<!-- ФОРМА -->
+<section id="form">
+  <div class="wrap">
+    <div class="form-wrap">
+      <div class="form-grid">
+        <div>
+          <h2>Рассчитаю платёж и условия — бесплатно</h2>
+          <p>Оставьте контакты. Я лично свяжусь в течение рабочего дня, задам пару вопросов и пришлю расчёт с полной стоимостью. Взнос от 0%, решение за 2 дня.</p>
+        </div>
+        <form id="leadForm" action="https://formspree.io/f/xrendgqe" method="POST">
+          <input type="text" name="Имя" placeholder="Ваше имя" required>
+          <input type="tel" name="Телефон" placeholder="Телефон" required>
+          <input type="text" name="Авто" placeholder="Какое авто интересует (необязательно)">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта — лизинг">
+          <button class="btn" type="submit">Получить расчёт</button>
+          <div class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</div>
+          <div class="ok">Спасибо! Я свяжусь с вами в ближайшее время.</div>
+          <div class="err" style="display:none;background:#3a1414;color:#ffb4b4;padding:13px;border-radius:3px;font-weight:600;text-align:center">Не удалось отправить. Позвоните: +7-916-977-79-06</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ГАРАНТИИ -->
+<section class="guar">
+  <div class="wrap">
+    <div class="eyebrow">Гарантии</div>
+    <div class="divider"></div>
+    <h2 class="title">Почему мне можно доверять</h2>
+    <div class="grid g3" style="margin-top:38px">
+      <div class="card"><div class="ic">◎</div><h3>Прозрачность</h3><p>Все цифры и комиссии — до подписания. Никаких скрытых платежей.</p></div>
+      <div class="card"><div class="ic">◆</div><h3>Бесплатно для вас</h3><p>Я получаю комиссию от лизинговой компании, а не от вас.</p></div>
+      <div class="card"><div class="ic">§</div><h3>Юридическая чистота</h3><p>Проверяю договор, объясняю каждый пункт простым языком.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="wrap" style="max-width:860px">
+    <div class="eyebrow">Частые вопросы</div>
+    <div class="divider"></div>
+    <h2 class="title">Вопросы и ответы</h2>
+    <div style="margin-top:28px">
+      <div class="faq-item"><div class="faq-q">Действительно ли взнос может быть 0%?<span class="pl">+</span></div><div class="faq-a">Да, есть программы без первоначального взноса. Обычно это чуть выше ставка или обязательное КАСКО — я честно покажу разницу и помогу выбрать оптимальный вариант.</div></div>
+      <div class="faq-item"><div class="faq-q">Сколько стоят ваши услуги?<span class="pl">+</span></div><div class="faq-a">Для вас — бесплатно. Мою комиссию платит лизинговая компания, при этом ставка для вас остаётся брокерской — ниже, чем «с улицы».</div></div>
+      <div class="faq-item"><div class="faq-q">Одобрят ли лизинг новому ИП или ООО?<span class="pl">+</span></div><div class="faq-a">Часто да. Я работаю со сложными кейсами: молодой бизнес, ИП без оборотов, отказы в банке. Знаю, в какую компанию направить заявку.</div></div>
+      <div class="faq-item"><div class="faq-q">Как быстро я получу авто?<span class="pl">+</span></div><div class="faq-a">Предварительное решение — в день обращения, окончательное — за 2 дня. Дальше подписание и выдача авто.</div></div>
+      <div class="faq-item"><div class="faq-q">Какие документы нужны?<span class="pl">+</span></div><div class="faq-a">Обычно минимальный пакет: реквизиты компании/ИП и паспорт руководителя. Точный список пришлю под выбранную программу.</div></div>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;padding:56px 26px;background:#fff;border-top:1px solid var(--line)">
+  <a class="btn" href="#form">Оставить заявку</a>
+</div>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <div class="divider"></div>
+    <h2 class="title">Связаться со мной</h2>
+    <div class="grid g3" style="margin-top:38px">
+      <div class="card"><div class="ic">☎</div><h3>Телефон</h3><p><a href="tel:+79169777906">+7-916-977-79-06</a></p></div>
+      <div class="card"><div class="ic">✈</div><h3>Telegram / WhatsApp</h3><p><a href="https://wa.me/79169777906">+7-916-977-79-06</a></p></div>
+      <div class="card"><div class="ic">✉</div><h3>Почта</h3><p><a href="mailto:tolochkinaov@gmail.com">tolochkinaov@gmail.com</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОДВАЛ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="logo"><span class="mark">ОТ</span><div><b>Ольга Толочкина</b><small>Финансовый эксперт · лизинг</small></div></div>
+      <div class="foot-links">
+        <a href="tel:+79169777906">+7-916-977-79-06</a>
+        <a href="mailto:tolochkinaov@gmail.com">tolochkinaov@gmail.com</a>
+        <a href="#form">Заявка</a>
+        <a href="#adv">Преимущества</a>
+        <a href="#faq">Вопросы</a>
+      </div>
+    </div>
+    <p class="disclaimer">© 2026 Ольга Толочкина. Информация на сайте не является публичной офертой. Условия лизинга (ставка, взнос, срок) зависят от лизинговой компании и профиля клиента и уточняются индивидуально. Прототип: замените плейсхолдеры (фото olga.jpg и olga2.jpg, отзывы, пример платежа) реальными данными.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(function(it){
+  it.querySelector('.faq-q').addEventListener('click',function(){it.classList.toggle('open');});
+});
+(function(){
+  var price=document.getElementById('carPrice'), rate=document.getElementById('rate');
+  var mOut=document.getElementById('monthlyOut'), aOut=document.getElementById('advOut'), rowLease=document.getElementById('rowLease');
+  function fmt(n){return Math.round(n).toLocaleString('ru-RU')+' ₽';}
+  function calc(){
+    var P=Math.max(0,+price.value||0), r=Math.max(0,+rate.value||0), term=36, adv=P*0.2;
+    var financed=P-adv, markup=P*(r/100)*(term/12), monthly=(financed+markup)/term;
+    mOut.textContent='≈ '+fmt(monthly)+'/мес';
+    aOut.textContent=fmt(adv);
+    rowLease.textContent='≈ '+fmt(monthly);
+  }
+  if(price&&rate){price.addEventListener('input',calc);rate.addEventListener('input',calc);calc();}
+})();
+(function(){
+  var lf=document.getElementById('leadForm');
+  if(!lf)return;
+  lf.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=lf.querySelector('.ok'), err=lf.querySelector('.err');
+    fetch(lf.action,{method:'POST',body:new FormData(lf),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){lf.reset();ok.style.display='block';err.style.display='none';}
+        else{err.style.display='block';ok.style.display='none';}
+      })
+      .catch(function(){err.style.display='block';ok.style.display='none';});
+  });
+})();
+</script>
+</body>
+</html>
