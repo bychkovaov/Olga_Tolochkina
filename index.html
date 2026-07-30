@@ -4,9 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ольга Толочкина — лизинг и кредит на авто для бизнеса, ИП и частных лиц</title>
+<meta name="description" content="Лизинг авто по цене меньше парковки. Взнос от 0%, решение за 2 дня, одобрение 95%. Подбор среди 20+ компаний. Лизинг и кредит на авто, технику, оборудование и недвижимость.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23C6F135'/><text x='32' y='45' font-family='Arial,sans-serif' font-size='30' font-weight='bold' text-anchor='middle' fill='%230E0E0E'>OT</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://olgatolochkina.ru/">
+<meta property="og:title" content="Ольга Толочкина — лизинг авто по цене меньше парковки">
+<meta property="og:description" content="Взнос от 0%, решение за 2 дня, одобрение 95%. Подбор среди 20+ компаний. Лизинг и кредит для бизнеса, ИП и частных лиц.">
+<meta property="og:image" content="https://olgatolochkina.ru/olga.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+   ym(111158207,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/111158207" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <style>
 :root{
   --navy:#0E0E0E; --navy-2:#1C1C1C; --gold:#C6F135; --gold-d:#55670C;
@@ -195,15 +214,6 @@ footer{background:var(--navy);color:#AEB6C4;padding:52px 0 40px;border-top:1px s
   .hero h1{font-size:36px}
 }
 </style>
-  <script type="text/javascript">
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
-   ym(111158207,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/111158207" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
 </head>
 <body>
 
@@ -591,7 +601,8 @@ document.querySelectorAll('.faq-item').forEach(function(it){
     var ok=lf.querySelector('.ok'), err=lf.querySelector('.err');
     fetch(lf.action,{method:'POST',body:new FormData(lf),headers:{'Accept':'application/json'}})
       .then(function(r){
-        if(r.ok){lf.reset();ok.style.display='block';err.style.display='none';}
+        if(r.ok){lf.reset();ok.style.display='block';err.style.display='none';
+          if(window.ym){ym(111158207,'reachGoal','lead');}}
         else{err.style.display='block';ok.style.display='none';}
       })
       .catch(function(){err.style.display='block';ok.style.display='none';});
